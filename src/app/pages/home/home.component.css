@@ -1,0 +1,176 @@
+/* Estilos generales */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar-brand h1, .navbar-brand h2 {
+  margin: 0;
+  color: white;
+}
+
+.navbar-brand h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Contenedor principal */
+.container {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.mt-5 {
+  margin-top: 5rem !important;
+}
+
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+
+/* Tarjetas */
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2);
+  margin: 1.5rem auto;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #ff6f61;
+}
+
+/* Grupo de entrada */
+.input-group-append .btn {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* Lista de tareas */
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item input[type="text"] {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.list-group-item input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid #ced4da;
+}
+
+/* Botón de eliminar tarea */
+.btn-danger.btn-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #ff6f61;
+}
+
+/* Botones de filtro */
+.btn-outline-secondary {
+  margin: 0 0.25rem;
+  border-color: #ff6f61;
+  color: #ff6f61;
+}
+
+.btn-outline-secondary.active {
+  background-color: #ff6f61;
+  color: white;
+}
+
+/* Ajustes adicionales */
+.input-group .form-control {
+  height: calc(2.25rem + 2px);
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #ff6f61;
+  border-radius: 50%;
+  position: relative;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .navbar-brand h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-brand h2 {
+    font-size: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+}
